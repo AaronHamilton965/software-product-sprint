@@ -7,3 +7,45 @@
 #greeting-container {
   margin-top: 20px;
 }
+
+/* Add a background color to the top navigation */
+.topnav {
+    background-color: #d3d3d3;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin-bottom: 20px;
+    
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: right;
+    color: #343a40;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: sans-serif;
+}
+
+/* Adds a shadow under the nav bar */
+.shadow {
+    box-shadow: 0, .125rem .25rem rgba(0,0,0,.075)!important;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color:black;
+}
+
+/* Add a color to the active/current/link and float left */
+.topnav a.active {
+    background-color: #A9A9A9;
+    color: white;
+    font-weight: bold;
+    float: left;
+}
+
+/* moves h1 down */
