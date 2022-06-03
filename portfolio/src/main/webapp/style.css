@@ -2,6 +2,11 @@
   margin-left: auto;
   margin-right: auto;
   width: 650px;
+  font-family: sans-serif;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
 #greeting-container {
@@ -48,4 +53,45 @@
     float: left;
 }
 
-/* moves h1 down */
+/* adjusts size and position of h1 */
+h1 {
+    padding-top: 40px;
+    font-size: 100px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+/* adjusts size and position of h2 */
+h3 {
+    font-size: 1.75rem;
+    font-weight: bold;
+}
+
+/* Makes image circular */
+.main-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    width: 300px;
+    height: auto;
+    margin-top: 100px;
+}
+
+/* Stylize the social links */
+.social-link {
+    color: #343a40;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    background-color: #ddd;
+    margin: 25px;
+    display: inline-block;
+}
+
+/* Stylize social link upon hover */
+.social-link:hover {
+    background-color: #BEBEBE;
+    color:black;
+}
