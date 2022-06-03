@@ -118,3 +118,30 @@ button {
     margin-top: 10px;
     margin-bottom: 10px;
 }
+
+/* Adjust position and style of project name */
+.project-name {
+    display: block;
+    font-size: 1.25rem;
+    float: left;
+    text-align: left;
+    text-decoration: underline;
+    clear: both;
+}
+
+/* Adjust position and style of project description */
+.project-description {
+    display: block;
+    float: right;
+    text-align: left;
+    margin: 0;
+}
+
+/* Adjust position and style of project technology */
+.tech-used {
+    display: block;
+    float: left;
+    text-align: left;
+    margin-bottom: 0;
+    clear: both;
+}
