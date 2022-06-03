@@ -4,8 +4,6 @@
   width: 650px;
   font-family: sans-serif;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
   text-align: center;
 }
 
@@ -75,7 +73,7 @@ h3 {
     border-radius: 50%;
     width: 300px;
     height: auto;
-    margin-top: 100px;
+    margin-top: 35px;
 }
 
 /* Stylize the social links */
@@ -94,4 +92,29 @@ h3 {
 .social-link:hover {
     background-color: #BEBEBE;
     color:black;
+}
+
+/* Stylize the about section */
+.about {
+    display: inline-block;
+    background-color: #dddddd;
+    width: 100%;
+}
+
+/* Change h2 font and position */
+h2 {
+  font-size: 2rem;
+  margin-top: 25px;
+  margin-bottom: 0;
+}
+
+/* Add some space below button */
+button {
+    margin-bottom: 10px;
+}
+
+/* Add some space above the random fact */
+.fact-container {
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
