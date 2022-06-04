@@ -99,6 +99,7 @@ h3 {
     display: inline-block;
     background-color: #dddddd;
     width: 100%;
+    padding-bottom: 25px;
 }
 
 /* Change h2 font and position */
@@ -143,5 +144,53 @@ button {
     float: left;
     text-align: left;
     margin-bottom: 0;
+    clear: both;
+}
+
+/* adjust each image size and positioning on webpage */
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+    height: 360px;
+}
+
+/* highlight border when image is hovered */
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+/* image fills entire container gallery */
+div.gallery img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Stylize and update the blog post container */
+.leftcolumn {
+    float: left;
+    width: 100%;
+    text-align: left;
+}
+
+/*  Stylize card that holds actual blog post */
+.card {
+    background-color: #dddddd;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Adjusts position of blog header */
+#blog {
+    padding-top: 25px;
+    display: block;
     clear: both;
 }
