@@ -7,13 +7,117 @@
     <script src="script.js"></script>
   </head>
   <body>
-    <div id="content">
-      <h1>My Portfolio</h1>
-      <p>This is my portfolio.</p>
-      <p>Click <a href="/hello">here</a> to see content created by server code.</p>
-      <p>Click here to get a random message:</p>
-      <button onclick="addRandomGreeting()">Hello</button>
-      <div id="greeting-container"></div>
+    <div class="topnav shadow">
+        <a class="active" href="#name">Aaron Hamilton</a>
+        <div class="right-nav-buttons">
+            <a href="#blog">Blog</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#projects">Projects</a>
+            <a href="#about">About</a>
+        </div>
     </div>
+    <div id="content">
+      <h1>Aaron Hamilton</h1>
+      <hr>
+      <h3>Computer Science Student at the
+        California State University of San Marcos</h3>
+      <hr>
+      <a target="_blank" class="social-link" href="https://www.linkedin.com/in/aaron-hamilton-7b12b21b0/">Linkedin</a>
+      <a target="_blank" class="social-link" href="https://github.com/AaronHamilton965">Github</a>
+      </div>
+      <div class="about" id="about">
+        <div id="content">
+            <h2 class="header">About Me</h2>
+            <img class="main-img" src="/images/highschool-grad-photo.jpg" />
+            <p>
+                My name is Aaron Hamilton, an aspiring Software Engineer and Computer Science major at the California State University of San Marcos. I am passionate about utilizing Computer Science and programming as a method of creation and turning my ideas into realities. My goal is to utilize this knowledge to come up and create applications that will benefit society.
+            </p>
+            <p>
+                During my free time, I enjoy working on personal projects, learning new things, and spending time with my family/friends. I chose to pursue Computer Science back in middle school after playing one of my favorite video games of all time. It inspired me to the point where I went to Google to figure out how one could create such a game on their own, this is where I stumbled upon Computer Science and decided to dedicate myself to this path.
+            </p>
+            <p>Click <a href="/hello">here</a> to see content created by server code.</p>
+            <p>Click here to get a random fact about me:</p>
+            <button onclick="addRandomFact()">Random Fact About Me</button>
+            <div id="fact-container"></div>
+            <h2 class="header" id="projects">Projects</h2>
+            <h3 class="project-name">Save My Wallet</h3>
+            <p class="project-description">Save My Wallet is an online web application designed to help users manage their subscription payments. The site will calculate both the monthly and annual payments for the user to visually see the true amount that they are paying. The user is able access this information by choosing from a drop down list of over 10+ common subscriptions such as Disney+ and Netflix.</p>
+            <p class="tech-used">Technology Used: HTML, CSS, Bootstrap, Python, Flask, Javascript, Google Firebase Firestore.</p>
+            <h3 class="project-name">Band Template</h3>
+            <p class="project-description">Designed and developed a website that musicians and bands could use to display their
+                information, merchandise, and discography.</p>
+            <p class="tech-used">Technology Used: HTML, CSS, Javascript.</p>
+            <h3 class="project-name">Flappy Bird</h3>
+            <p class="project-description">Coded the classic legendary mobile game that made everyone rage, coded with Python and Pygame. Created sprite animations and game/collision physics. Includes an auto-scrolling stage and a restart button for additional play. Contains a working score counter at the top of the screen that tracks how many pipes you have successfully passed.</p>
+            <p class="tech-used">Technology Used: Python and the Pygame module.</p>
+        </div>
+      </div>
+      <div id="content">
+        <h2 class="header" id="gallery">Gallery</h2>
+        <p>This gallery consists of my favorite places and things in life. When I take pictures, I prefer them to be memories of the locations I have experienced and the places that I have seen.</p>
+        <p>Although none of these images are of my own, each one represents a part of me that I truly cherish and favor. I mostly enjoy aesthetic scenary or locations of places that I would like to go or have personally been to.</p>
+        <div class="gallery">
+            <a target="_blank" href="/images/japan3.jpg">
+                <img src="/images/japan3.jpg" alt="Japanese Sunset Scenary" width="600" height="400">
+            </a>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="/images/paris.jpg">
+                <img src="/images/paris.jpg" alt="Paris Scenary" width="600" height="400">
+            </a>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href="/images/japan1.jpg">
+                <img src="/images/japan1.jpg" alt="Japanese Countryside Scenary" width="600" height="400">
+            </a>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href="/images/italy.jpg">
+                <img src="/images/italy.jpg" alt="Italy Scenary" width="600" height="400">
+            </a>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href="/images/japan2.jpg">
+                <img src="/images/japan2.jpg" alt="Japanese City Night Scenary" width="600" height="400">
+            </a>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href="/images/korea1.jpg">
+                <img src="/images/korea1.jpg" alt="Korean City Street" width="600" height="400">
+            </a>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href="/images/SanDiego.jpg">
+                <img src="/images/SanDiego.jpg" alt="San Diego Beach" width="600" height="400">
+            </a>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href="/images/taiwan.jpg">
+                <img src="/images/taiwan.jpg" alt="Taipei Night City Street View" width="600" height="400">
+            </a>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href="/images/sf.jpg">
+                <img src="/images/sf.jpg" alt="San Francisco Scenary at Night" width="600" height="400">
+            </a>
+        </div>
+        <h2 class="header" id="blog">Blog</h2> 
+        <div class="row">
+            <div class="leftcolumn">
+                <div class="card">
+                    <h3>A Hidden Talent of Mine</h3>
+                    <h5>Aaron Hamilton discusses a hidden talent that he posesses, June 4, 2022</h5>
+                    <p>Something that others find very difficult to notice about me is that I am actually decent at singing! Growing up and attending a bunch of Filipino family parties, my karaoke skills have been honed to the point where I am actually a little confident in my slightly above average vocal prowess on the mic. That's all for this issue of Aaron's hidden talent, thank you for reading and catch you all in the next blog post!</p>
+                </div>
+                <div class="card">
+                    <h3>Another Hidden Talent of Mine</h3>
+                    <h5>Aaron Hamilton discusses yet another hidden talent that he posesses, June 4, 2022</h5>
+                    <p>Hello again readers, once again this is Aaron Hamilton, here to reveal and present another one of my hiddent talents that many do notice at first glance. This talent could correlate a bit more with my career and educational journey moreso than my previous singing talent I mentioned last blog post. I actually really enjoy thinking strategically. Growing up, I always loved to speculate the optimal business performences a game company or any of my other favorite companies can make in order to successfuly keep the playerbase or cutomers interested.</p>
+                    <p>I also really enjoy and have always played startegy based games. Whether it's an empire builder like Sid Meier's Civilization VI or a war strategy game such as Fire Emblem, I love to come up with an optimal plan and succeed in such games. Regardless, strategic thinking is my second and final hidden talent I would like to share for now. Thank you for reading this second blog post, and have a great rest of your day!</p>
+                </div>
+            </div>
+        </div>
+      </div>
   </body>
 </html>
