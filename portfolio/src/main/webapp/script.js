@@ -31,9 +31,12 @@ function addRandomFact() {
  */
 
 async function addRandomQuote() {
+    // Send a request to /my-data-url.
     const responseFromServer = await fetch('/quote');
-    const textFromResponse = await responseFromServer.text();
+    // The json() function returns an object that contains fields that we can
+    // reference to create HTML.
+    const quote = await responseFromServer.json();
 
-    const quoteContainer = document.getElementById('quote-container');
-    quoteContainer.innerText = textFromResponse;
+    // Now we can reference the fields in myObject!
+    console.log(quote.quotes);
 }
