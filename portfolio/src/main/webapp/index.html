@@ -124,12 +124,51 @@
                 </div>
             </div>
         </div>
-        <form action="/form-handler" method="POST">
-            <p>Enter some text here:</p>
-            <textarea name="text-input">hello world</textarea>
-            <br/>
-            <input type="submit" />
-          </form>
+        <div class="container">
+            <h4>Share A Message!</h4>
+            <form action="/form-handler" method="POST">
+            <div class="row">
+              <div class="col-25">
+                <label for="fname">Name</label>
+              </div>
+              <div class="col-75">
+                <input type="text" id="name" name="name-value" placeholder="Your name..">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <label for="email">Email</label>
+              </div>
+              <div class="col-75">
+                <input type="text" id="email" name="email-value" placeholder="YourEmail@gmail.com..">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <label for="country">Country</label>
+              </div>
+              <div class="col-75">
+                <select id="country" name="country-value">
+                  <option value="australia">Australia</option>
+                  <option value="canada">Canada</option>
+                  <option value="usa">USA</option>
+                </select>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <label for="subject">Subject</label>
+              </div>
+              <div class="col-75">
+                <textarea id="subject" name="subject-value" placeholder="Write something.." style="height:200px"></textarea>
+              </div>
+            </div>
+            <br>
+            <div class="row">
+              <input type="submit" value="Submit">
+            </div>
+            </form>
+          </div>
       </div>
   </body>
 </html>
