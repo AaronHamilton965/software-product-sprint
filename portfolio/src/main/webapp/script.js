@@ -37,6 +37,6 @@ async function addRandomQuote() {
     // reference to create HTML.
     const quote = await responseFromServer.json();
 
-    // Now we can reference the fields in myObject!
-    console.log(quote.quotes);
+    const quoteContainer = document.getElementById('quote-container');
+    quoteContainer.innerText = quote;
 }
