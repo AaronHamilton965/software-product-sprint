@@ -26,3 +26,17 @@ function addRandomFact() {
   const factContainer = document.getElementById('fact-container');
   factContainer.innerText = fact;
 }
+/**
+ * Adds a quote.
+ */
+
+async function addRandomQuote() {
+    // Send a request to /my-data-url.
+    const responseFromServer = await fetch('/quote');
+    // The json() function returns an object that contains fields that we can
+    // reference to create HTML.
+    const quote = await responseFromServer.json();
+
+    const quoteContainer = document.getElementById('quote-container');
+    quoteContainer.innerText = quote;
+}
